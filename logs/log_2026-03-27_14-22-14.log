@@ -1,0 +1,7 @@
+[2026-03-27 14:22:14,876] INFO - Logger is working
+[2026-03-27 14:22:15,485] INFO - NumExpr defaulting to 12 threads.
+[2026-03-27 14:22:15,857] INFO - Entered the data ingestion method
+[2026-03-27 14:22:15,877] INFO - Read the dataset as dataframe
+[2026-03-27 14:22:15,887] INFO - Saved the raw data to artifacts folder
+[2026-03-27 14:22:18,889] INFO - Split the data into train and test set and saved them in artifacts folder
+[2026-03-27 14:22:18,890] INFO - Data ingestion completed successfully
