@@ -1,0 +1,45 @@
+[2026-03-27 17:51:07,187] INFO - Logger is working
+[2026-03-27 17:51:07,200] INFO - Starting data transformation
+[2026-03-27 17:51:07,229] INFO - Data loaded successfully
+[2026-03-27 17:51:07,273] INFO - Creating preprocessing pipelines
+[2026-03-27 17:51:07,273] INFO - Pipelines created successfully
+[2026-03-27 17:51:07,273] INFO - Applying preprocessing on train and test data
+[2026-03-27 17:51:07,301] INFO - Saving preprocessing object
+[2026-03-27 17:51:07,304] INFO - Splitting data
+[2026-03-27 17:51:07,307] INFO - Training Random Forest
+[2026-03-27 17:51:14,329] INFO - Random Forest Accuracy: 0.8478260869565217
+[2026-03-27 17:51:14,329] INFO - Random Forest ROC AUC: 0.9049541284403669
+[2026-03-27 17:51:14,330] INFO - Random Forest Confusion Matrix:
+[[65 10]
+ [18 91]]
+[2026-03-27 17:51:14,330] INFO - Training Decision Tree
+[2026-03-27 17:51:14,365] INFO - Decision Tree Accuracy: 0.8043478260869565
+[2026-03-27 17:51:14,365] INFO - Decision Tree ROC AUC: 0.8692354740061163
+[2026-03-27 17:51:14,366] INFO - Decision Tree Confusion Matrix:
+[[61 14]
+ [22 87]]
+[2026-03-27 17:51:14,366] INFO - Training KNN
+[2026-03-27 17:51:19,001] INFO - KNN Accuracy: 0.8532608695652174
+[2026-03-27 17:51:19,002] INFO - KNN ROC AUC: 0.9104587155963304
+[2026-03-27 17:51:19,002] INFO - KNN Confusion Matrix:
+[[63 12]
+ [15 94]]
+[2026-03-27 17:51:19,002] INFO - Training Gradient Boosting
+[2026-03-27 17:51:19,419] INFO - Gradient Boosting Accuracy: 0.8206521739130435
+[2026-03-27 17:51:19,420] INFO - Gradient Boosting ROC AUC: 0.9026299694189603
+[2026-03-27 17:51:19,420] INFO - Gradient Boosting Confusion Matrix:
+[[62 13]
+ [20 89]]
+[2026-03-27 17:51:19,420] INFO - Training XGBoost
+[2026-03-27 17:51:19,765] INFO - XGBoost Accuracy: 0.8152173913043478
+[2026-03-27 17:51:19,766] INFO - XGBoost ROC AUC: 0.8832415902140672
+[2026-03-27 17:51:19,766] INFO - XGBoost Confusion Matrix:
+[[59 16]
+ [18 91]]
+[2026-03-27 17:51:19,766] INFO - Training CatBoost
+[2026-03-27 17:51:24,085] INFO - CatBoost Accuracy: 0.842391304347826
+[2026-03-27 17:51:24,085] INFO - CatBoost ROC AUC: 0.9149847094801223
+[2026-03-27 17:51:24,085] INFO - CatBoost Confusion Matrix:
+[[63 12]
+ [17 92]]
+[2026-03-27 17:51:24,085] INFO - Best Model: CatBoost with ROC AUC: 0.9149847094801223

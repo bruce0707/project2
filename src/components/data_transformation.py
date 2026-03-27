@@ -26,17 +26,15 @@ class DataTransformation:
     def __init__(self):
         self.data_transformation_config = DataTransformationConfig()
 
-    def get_data_transformer_object(self):
+    def get_data_transformer_object(self, X):
         try:
             logging.info("Creating preprocessing pipelines")
 
-            numerical_columns = [
-                                "age", "trestbps", "chol", "thalch", "oldpeak"
-                                     ]
+            all_numerical = ["age", "trestbps", "chol", "thalch", "oldpeak"]
+            all_categorical = ["sex", "cp", "fbs", "restecg", "exang", "slope", "ca", "thal"]
 
-            categorical_columns = [
-                                    "sex", "cp", "fbs", "restecg", "exang", "slope", "ca", "thal"
-        ]
+            numerical_columns = [col for col in X.columns if col in all_numerical]
+            categorical_columns = [col for col in X.columns if col in all_categorical]
 
             num_pipeline = Pipeline(
                 steps=[
@@ -82,8 +80,12 @@ class DataTransformation:
 
             train_df.replace("?", np.nan, inplace=True)
             test_df.replace("?", np.nan, inplace=True)
-            train_df = train_df.apply(pd.to_numeric, errors='ignore')
-            test_df = test_df.apply(pd.to_numeric, errors='ignore')
+
+            train_df = train_df.apply(lambda col: pd.to_numeric(col, errors='coerce'))
+            test_df = test_df.apply(lambda col: pd.to_numeric(col, errors='coerce'))
+
+            train_df.dropna(axis=1, how='all', inplace=True)
+            test_df.dropna(axis=1, how='all', inplace=True)
 
             train_df["num"] = train_df["num"].apply(lambda x: 1 if x > 0 else 0)
             test_df["num"] = test_df["num"].apply(lambda x: 1 if x > 0 else 0)
@@ -95,7 +97,7 @@ class DataTransformation:
             input_feature_test_df = test_df.drop(columns=[target_column_name])
             target_feature_test_df = test_df[target_column_name]
 
-            preprocessor = self.get_data_transformer_object()
+            preprocessor = self.get_data_transformer_object(input_feature_train_df)
 
             logging.info("Applying preprocessing on train and test data")
 

@@ -1,0 +1,8 @@
+[2026-03-27 18:08:07,405] INFO - Logger is working
+[2026-03-27 18:08:07,408] INFO - Starting data transformation
+[2026-03-27 18:08:07,424] INFO - Data loaded successfully
+[2026-03-27 18:08:07,441] INFO - Creating preprocessing pipelines
+[2026-03-27 18:08:07,442] INFO - Pipelines created successfully
+[2026-03-27 18:08:07,442] INFO - Applying preprocessing on train and test data
+[2026-03-27 18:08:07,466] INFO - Saving preprocessing object
+[2026-03-27 18:08:07,467] INFO - Data transformation completed successfully
