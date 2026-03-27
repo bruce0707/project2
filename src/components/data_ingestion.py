@@ -21,6 +21,7 @@ class DataIngestion:
             DATA_PATH = os.path.join("notebooks", "data", "heart_disease_uci.csv")
             df = pd.read_csv(DATA_PATH)
             logging.info("Read the dataset as dataframe")
+            print(df.columns)
 
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)
 
