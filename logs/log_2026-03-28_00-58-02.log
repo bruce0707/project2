@@ -1,3 +1,14 @@
 [2026-03-28 00:58:02,908] INFO - Logger is working
 [2026-03-28 00:58:02,939] WARNING -  * Debugger is active!
 [2026-03-28 00:58:02,943] INFO -  * Debugger PIN: 841-567-263
+[2026-03-28 01:03:06,212] INFO - 127.0.0.1 - - [28/Mar/2026 01:03:06] "GET / HTTP/1.1" 200 -
+[2026-03-28 01:04:42,244] INFO - Starting prediction pipeline
+[2026-03-28 01:04:42,336] INFO - 127.0.0.1 - - [28/Mar/2026 01:04:42] "POST /predict HTTP/1.1" 200 -
+[2026-03-28 01:12:43,720] INFO - Starting prediction pipeline
+[2026-03-28 01:12:44,022] INFO - 127.0.0.1 - - [28/Mar/2026 01:12:44] "POST /predict HTTP/1.1" 200 -
+[2026-03-28 01:13:45,765] INFO - Starting prediction pipeline
+[2026-03-28 01:13:45,963] INFO - 127.0.0.1 - - [28/Mar/2026 01:13:45] "POST /predict HTTP/1.1" 200 -
+[2026-03-28 02:05:02,574] INFO -  * Detected change in 'C:\\Users\\Lenovo\\anaconda3\\envs\\myenv\\Lib\\site-packages\\numpy\\_typing\\__init__.py', reloading
+[2026-03-28 02:05:02,581] INFO -  * Detected change in 'C:\\Users\\Lenovo\\anaconda3\\envs\\myenv\\Lib\\site-packages\\numpy\\_typing\\_shape.py', reloading
+[2026-03-28 02:05:02,611] INFO -  * Detected change in 'C:\\Users\\Lenovo\\anaconda3\\envs\\myenv\\Lib\\site-packages\\numpy\\typing\\__init__.py', reloading
+[2026-03-28 02:05:02,629] INFO -  * Detected change in 'C:\\Users\\Lenovo\\anaconda3\\envs\\myenv\\Lib\\site-packages\\numpy\\_typing\\_array_like.py', reloading
